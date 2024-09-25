@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.0/dist/umd/supabase.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pica/9.0.1/pica.min.js"
+        integrity="sha512-FH8Ofw1HLbwK/UTvlNBxsfICDXYZBr9dPuTh3j17E5n1QZjaucKikW6UwMREFo7Z42AlIigHha3UVwWepr0Ujw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="app.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Enviar Foto</h1>
+        <div class="form-group">
+            <label for="photo">Clique no circulo abaixo para tirar uma foto:</label>
+            <p>Esteja com seu rosto visível para autenticação do ingresso!!</p>
+
+
+            <div class="file-input-container">
+                <input type="file" id="myFileInput" name="photo" accept="image/*;capture=camera" required>
+                <label for="myFileInput" class="custom-file-label">
+                    <i class="fas fa-camera"></i>
+                    <img id="previewImage" src="" alt="Image Preview" style="display: none;">
+                </label>
+                </label>
+            </div>
+            <button id="seguinte" class="btn btn-primary">Enviar</button>
+        </div>
+
+        <script type="module" src="js/preparePhoto.js"></script>
+</body>
+
+</html>

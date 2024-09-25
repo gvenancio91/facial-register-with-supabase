@@ -1,0 +1,148 @@
+/* Exemplo de como o CSS pode ser estruturado */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin: 15px;
+}
+.container img{
+
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.form-group p{
+    color: red;
+    margin-bottom: 15px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="file"] {
+    width: 90%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #0ff;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    margin: 0 auto;
+    width: 200px;
+}
+
+
+
+.btn-primary {
+    background-color: rgb(0, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.btn-primary:hover {
+    background-color: rgb(0, 201, 201);
+}
+.btn-sec{
+    background-color: rgb(255, 0, 0);
+    color: #ffffff;
+}
+.btn-sec:hover {
+    background-color: rgb(184, 0, 0);
+}
+.file-input-container {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-label {
+    display: inline-flex;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 24px;
+    color: #555;
+    border: 2px solid #ccc;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.custom-file-label:hover {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+.custom-file-label:active {
+    background-color: #d0d0d0;
+    color: #111;
+}
+
+.custom-file-label i {
+    pointer-events: none;
+    font-size: 80px;
+}
+.alert-icon {
+    color: red;
+    font-size: 64px;
+}
+.check-icon {
+    color: #0FF; /* Define a cor do ícone */
+    font-size: 80px; /* Define o tamanho do ícone */
+    display: block;
+    margin: 20px auto; /* Centraliza o ícone horizontalmente */
+}
+.warning{
+    color: red;
+}
+
+#previewImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    display: none;
+}
